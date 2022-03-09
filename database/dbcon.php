@@ -1,0 +1,13 @@
+<?php
+$con = mysqli_connect("localhost","root","","secdb");
+
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+ date_default_timezone_set("Africa/Kampala"); 
+ $activity_time = date("Y-m-d H:i:s");
+
+?>

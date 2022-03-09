@@ -1,0 +1,16 @@
+# Removing the extention
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Handling errors
+
+ErrorDocument 400 /secret/
+ErrorDocument 401 /secret/
+ErrorDocument 403 /secret/
+ErrorDocument 404 /secret/
+ErrorDocument 500 /secret/
+ErrorDocument 502 /secret/
+ErrorDocument 504 /secret/

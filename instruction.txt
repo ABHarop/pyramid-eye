@@ -1,0 +1,11 @@
+Instruction
+Create a database and name it secdb in your localhost.
+
+Below are the login details for the two account priviledges
+Administrator
+    Username: admin
+    Password: admin
+
+Staff
+    Username: staff
+    Password: arop
